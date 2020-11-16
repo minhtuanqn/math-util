@@ -19,6 +19,7 @@ public class MathUtilityTest {
     //cach dat ten ham noi len mua tieu test ham. Co nhieu quy tac dat ten ham test
     public void getFactorial_Runswell_IfValidArgument() {
         assertEquals(120, getFactorial(5));
+        assertEquals(1, getFactorial(0));
     }
     
     //can test xen ci bem ve ngoai le hay khong
