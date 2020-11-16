@@ -24,7 +24,7 @@ public class MathUtilityTest {
     
     //can test xen ci bem ve ngoai le hay khong
     //neu dung la nem ve ngoai le IllegelArgumentException trong tinh hiong giai thua -5 thi ta co mau xanh
-    @Test(expected = IllegalAccessException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void getFactorial_ThrowException_IfInvalidArgument() {
         getFactorial(-5);
     }
