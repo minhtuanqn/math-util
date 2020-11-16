@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test;
+package utility;
 
-import static tuanlm.util.MathUtility.*;
+import static tuanlm.main.Main.*;
 //cau lenh moi tu jdk 8
 //o duoi goi ham static khong can cham, y chang c , chi ao dung static
 /**
  *
  * @author MINH TUAN
  */
-public class Test {
+public class MathUtility {
     public static void main(String[] args) {
         //ta test thu ham cua ta
         //dung mat de so sanh ket qua thuc te khi chay va key qua ta mong doi
@@ -33,3 +33,14 @@ public class Test {
         System.out.println("PI: " + PI);
     }
 }
+//muon ket luan ham minh ngon, thi phai nhin bang mat ket qua chay cua ham
+//va so sanh voi ki vong
+//lam tung truong hop chay ham - test case
+//cach nay on nhung mat suc
+
+//NANG CAO: DUNG MAU SAC, XANH, DO DE KET LUAN
+//TA THAY XANH, HAM Y MOI CASE ON
+//TA THAY DO, CHI 1 THANG DO, COI NHU HOANG TOANG
+//TA XAI THEM 1 FRAMEWORK, UNIT TEST TEN CHUNG
+//JUNIT, TESTIG, NUNIT,... LA NHUNG FRAMEWORJ CU THE DEGIUP TEST CAC HAM 1 CACH HIEU QUA
+//DUNG NO TA TICH HOP VAO 1 QUY TRINH LAM PHAN MEM LON HON - CI/CT/CD/DEV   OPS

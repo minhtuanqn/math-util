@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tuanlm.util;
+package tuanlm.main;
 
 /**
  *
  * @author USER
  */
-public class MathUtility {
+public class Main {
 
     //class này fake class Math của JDK
     //Math của JDK có .abs() .sqrt() .sin() .PI
