@@ -22,19 +22,35 @@ public class Main {
     //21! cực lớn, tràn kiểu long, chứa ko nổi
     //int: tối đa 2 tỷ 1 mấy
     //hàm tính giai thừa trong giới hạn đầu vào từ 0..20
+//    public static long getFactorial(int n) {
+//        if (n < 0 || n > 20) {
+//            throw new IllegalArgumentException("n must be between 0..20");
+//
+//        }
+//        if (n == 0 || n == 1) {
+//            return 1;
+//        }
+//        long result = 1;
+//        for(int i = 2; i <= n; i++ ) {
+//            result *= i; 
+//        }
+//        return result;
+//    }
+    
+    //viet de quy cho hoanh trang
+    //goi lai chinh mnh voi mot quy mo khac
+    //5! = 5 * 4!
+    //.......
     public static long getFactorial(int n) {
-        if (n < 0 || n > 20) {
-            throw new IllegalArgumentException("n must be between 0..20");
-
-        }
-        if (n == 0 || n == 1) {
+        if(n < 0 || n > 20) throw  new IllegalArgumentException("n must be between 0..20");
+        
+        if(n == 0 || n == 1) 
             return 1;
-        }
-        long result = 1;
-        for(int i = 2; i <= n; i++ ) {
-            result *= i; 
-        }
-        return result;
+        
+        return n * getFactorial(n -1);
     }
-
+    //Minh minh hoa khai niem refactoring-toi uu code, chinh sua lai code cho tot hon 
+    //va minh hoa khai niem
+    // Regession test, test hoi quy, test lai nhung gi minh da tung test xanh nhu ngay xua khong sau
+    //khi da sua code
 }
